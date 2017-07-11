@@ -3,16 +3,20 @@ navbar-links:
     Github: https://github.com/
    # About: /about
 
-avatar: /hexo.png
-favicon: /hexo.png
+avatar: /sqldevops.ico
+favicon: /sqldevops.ico
 
 header:
     title: "SQL DEVOPS"
     motto: Where SQL Server and Open Source converge
     bigimgs:
 # add more pictures
-        - src: /bigimgs/ARGENTINA.jpg
-       #   desc: ARGENTINA
+        - src: /bigimgs/Argentina_Rocks.jpg
+          desc: Robbert Donner 
+        - src: /bigimgs/Road_Rocks.jpg
+          desc: Robbert Donner 
+        - src: /bigimgs/Sea_Rocks.jpg
+          desc: Robbert Donner
 
 
 rss: /atom.xml
@@ -68,9 +72,13 @@ footer:
     icon: fa-stack-overflow
     enable: false
 
-google_analytics:
+google_analytics: UA-91266041-1
 
 comment:
   enable: true
   disqus: https-sqldevops-github-io
+
+sitemap:
+  path: sitemap.xml
+  template: ./sitemap_template.xml
 

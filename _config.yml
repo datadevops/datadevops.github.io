@@ -4,7 +4,7 @@
 
 # Site
 title: SQL DevOps
-subtitle: where SQL Server and Open Source converge
+subtitle: Where SQL Server and Open Source converge
 description:
 author: ori donner
 language: default
@@ -81,6 +81,8 @@ feed:
   type: atom
   path: atom.xml
   limit: 20
+
+
 
 
 

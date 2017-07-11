@@ -25,9 +25,9 @@ block content
                     if page.prev
                         li.previous
                             a(href=url_for(page.prev.path), data-toggle="tooltip", data-placement="top", title=page.prev.title)= __('prev_post')
-                    if page.next
-                        li.next
-                            a(href=url_for(page.next.path), data-toggle="tooltip", data-placement="top", title=page.next.title)= __('next_post')
+                    //- if page.next
+                    //-     li.next
+                    //-         a(href=url_for(page.next.path), data-toggle="tooltip", data-placement="top", title=page.next.title)= __('next_post')
 
                 include partial/comment
 
