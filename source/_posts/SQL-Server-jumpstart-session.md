@@ -1,6 +1,7 @@
 ---
 title: SQL Server DevOps jumpstart
 date: 2016-11-30 18:30:35
+thumbnail: /images/sql-server-devops-jumpstart.bmp
 tags:
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Linked Server on SQL Server vNext
 date: 2017-05-15 12:25:46
+thumbnail: /images/linked-server.png
 tags:
   - vNnext
   - Linux

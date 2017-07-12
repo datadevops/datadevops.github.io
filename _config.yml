@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: SQL DevOps
-subtitle: Where SQL Server and Open Source converge
-description:
+title: Ori Donner
+subtitle: Ori Donner's Blog #Without data you're just another person with an opinion
+description: W. Edwards Demming
 author: ori donner
-language: default
+language: en
 timezone: Asia/Jerusalem
 
 # URL
@@ -66,7 +66,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: beautiful
+theme: hueman
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

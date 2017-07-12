@@ -1,6 +1,7 @@
 ---
 title: 3 good reasons for starting SQL Server vNext.
 date: 2017-04-02 11:07:02
+thumbnail: /images/sql-server-vnext.png
 tags:
   - vNext
   - Linux
@@ -72,8 +73,13 @@ In case you want to open a terminal to the Linux Ubuntu OS hosting your SQL Serv
 `c:\vNext> Vagrant ssh`
 For further information about managing SQL Server on Ubuntu, follow this [Link][9]
 
+
 ## SQL Server vNext further updates ##
 Follow SQL Server vNext updates, by joining the early adoption program, on this [link][02].
+
+##  Live YouTube demo
+{% youtube 6KLZCDilvg8 %}
+
 
 [01]: https://www.microsoft.com/en-us/sql-server/sql-server-vnext-including-Linux
 [02]: http://sqlservervnexteap.azurewebsites.net/
