@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>SQL DevOps</title>
-  <subtitle>Where SQL Server and Open Source converge</subtitle>
+  <title>Ori Donner</title>
+  <subtitle>Ori Donner&#39;s Blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://sqldevops.tech/"/>
-  <updated>2017-05-16T14:58:55.813Z</updated>
-  <id>https://sqldevops.tech/</id>
+  <link href="https://oridonner.github.io/"/>
+  <updated>2017-07-12T14:20:21.940Z</updated>
+  <id>https://oridonner.github.io/</id>
   
   <author>
     <name>ori donner</name>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>Linked Server on SQL Server vNext</title>
-    <link href="https://sqldevops.tech/2017/05/vNext-Linked-Server/"/>
-    <id>https://sqldevops.tech/2017/05/vNext-Linked-Server/</id>
+    <link href="https://oridonner.github.io/2017/05/vNext-Linked-Server/"/>
+    <id>https://oridonner.github.io/2017/05/vNext-Linked-Server/</id>
     <published>2017-05-15T09:25:46.000Z</published>
-    <updated>2017-05-16T14:58:55.813Z</updated>
+    <updated>2017-07-12T14:20:21.940Z</updated>
     
     <content type="html"><![CDATA[<p>If you have started Microsoft’s vNext SQL Server on Linux or Docker container and tried to set up a linked server, using SSMS GUI, you probably got this error message: <br><br><br><img src="/images/LinkedServerError.PNG" class="col-md-7"></p>
 <p><br><br><br><br><br>The reason is that Microsoft doesn’t support distributed queries on SQL Server vNext (yet), as published on Microsoft’s <a href="https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-release-notes" target="_blank" rel="external">official site</a>:<br><br><br><img src="/images/LinkedServerUnsupported.PNG" alt=""></p>
@@ -42,20 +42,20 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://sqldevops.tech/tags/Linux/"/>
+      <category term="Linux" scheme="https://oridonner.github.io/tags/Linux/"/>
     
-      <category term="vNnext" scheme="https://sqldevops.tech/tags/vNnext/"/>
+      <category term="vNnext" scheme="https://oridonner.github.io/tags/vNnext/"/>
     
-      <category term="Linked Server" scheme="https://sqldevops.tech/tags/Linked-Server/"/>
+      <category term="Linked Server" scheme="https://oridonner.github.io/tags/Linked-Server/"/>
     
   </entry>
   
   <entry>
     <title>3 good reasons for starting SQL Server vNext.</title>
-    <link href="https://sqldevops.tech/2017/04/SQL-Server-vNext-Vagrant-Box/"/>
-    <id>https://sqldevops.tech/2017/04/SQL-Server-vNext-Vagrant-Box/</id>
+    <link href="https://oridonner.github.io/2017/04/SQL-Server-vNext-Vagrant-Box/"/>
+    <id>https://oridonner.github.io/2017/04/SQL-Server-vNext-Vagrant-Box/</id>
     <published>2017-04-02T08:07:02.000Z</published>
-    <updated>2017-06-27T07:18:38.803Z</updated>
+    <updated>2017-07-12T14:40:10.573Z</updated>
     
     <content type="html"><![CDATA[<h2 id="SQL-Server-vNext"><a href="#SQL-Server-vNext" class="headerlink" title="SQL Server vNext"></a>SQL Server vNext</h2><p>Nov. 2016, Microsoft announced it’s first SQL Server Linux version (<a href="https://www.microsoft.com/en-us/sql-server/sql-server-vnext-including-Linux" target="_blank" rel="external">vNext</a>); On March 2017 CTP 1.4 was launched; An average rate of approximately one CTP update per month; Microsoft is taking things seriously!   </p>
 <p>You probably ask yourself; Why should a SQL Server DBA, works his entire life on Windows OS,  be interested in SQL Server running on Linux?  </p>
@@ -81,6 +81,7 @@
 <h2 id="Connect-to-SQL-Server-vNext"><a href="#Connect-to-SQL-Server-vNext" class="headerlink" title="Connect to SQL Server vNext"></a>Connect to SQL Server vNext</h2><p>Once the VM is up and running, it can be connected to. Open SSMS, in the <strong> Connect to Server </strong>window, enter the Server’s IP, as set in the Vagrant file. Use the SQL Server Authentication mode, and login  as “<strong>sa</strong>“ with  this password  “<strong>vnext@2017</strong>“.<br>If you want to name your VM’s server instead of using its IP, add this row to the hosts file on your host (c:\windows\system32\drivers\etc\hosts)  , where <strong>mssql-vnext</strong>  is the Servers name:<br><code>mssql-vnext 192.168.33.10</code></p>
 <h2 id="Open-a-terminal-to-Ubuntu-Server"><a href="#Open-a-terminal-to-Ubuntu-Server" class="headerlink" title="Open a terminal to Ubuntu Server"></a>Open a terminal to Ubuntu Server</h2><p>In case you want to open a terminal to the Linux Ubuntu OS hosting your SQL Server vNext, just execute this command:<br><code>c:\vNext&gt; Vagrant ssh</code><br>For further information about managing SQL Server on Ubuntu, follow this <a href="https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-management-overview" target="_blank" rel="external">Link</a></p>
 <h2 id="SQL-Server-vNext-further-updates"><a href="#SQL-Server-vNext-further-updates" class="headerlink" title="SQL Server vNext further updates"></a>SQL Server vNext further updates</h2><p>Follow SQL Server vNext updates, by joining the early adoption program, on this <a href="http://sqlservervnexteap.azurewebsites.net/" target="_blank" rel="external">link</a>.</p>
+<h2 id="Live-YouTube-demo"><a href="#Live-YouTube-demo" class="headerlink" title="Live YouTube demo"></a>Live YouTube demo</h2><div class="video-container"><iframe src="//www.youtube.com/embed/6KLZCDilvg8" frameborder="0" allowfullscreen></iframe></div>
 ]]></content>
     
     <summary type="html">
@@ -90,26 +91,26 @@
     </summary>
     
     
-      <category term="vNext" scheme="https://sqldevops.tech/tags/vNext/"/>
+      <category term="vNext" scheme="https://oridonner.github.io/tags/vNext/"/>
     
-      <category term="Linux" scheme="https://sqldevops.tech/tags/Linux/"/>
+      <category term="Linux" scheme="https://oridonner.github.io/tags/Linux/"/>
     
-      <category term="Packer" scheme="https://sqldevops.tech/tags/Packer/"/>
+      <category term="Packer" scheme="https://oridonner.github.io/tags/Packer/"/>
     
-      <category term="Vagrant" scheme="https://sqldevops.tech/tags/Vagrant/"/>
+      <category term="Vagrant" scheme="https://oridonner.github.io/tags/Vagrant/"/>
     
-      <category term="VirtualBox" scheme="https://sqldevops.tech/tags/VirtualBox/"/>
+      <category term="VirtualBox" scheme="https://oridonner.github.io/tags/VirtualBox/"/>
     
-      <category term="Ubuntu 16.04" scheme="https://sqldevops.tech/tags/Ubuntu-16-04/"/>
+      <category term="Ubuntu 16.04" scheme="https://oridonner.github.io/tags/Ubuntu-16-04/"/>
     
-      <category term="Virtual Machine" scheme="https://sqldevops.tech/tags/Virtual-Machine/"/>
+      <category term="Virtual Machine" scheme="https://oridonner.github.io/tags/Virtual-Machine/"/>
     
   </entry>
   
   <entry>
     <title>Starting your SQL Server&#39;s DevOps journey</title>
-    <link href="https://sqldevops.tech/2017/02/The-DevOps-Pipeline-1/"/>
-    <id>https://sqldevops.tech/2017/02/The-DevOps-Pipeline-1/</id>
+    <link href="https://oridonner.github.io/2017/02/The-DevOps-Pipeline-1/"/>
+    <id>https://oridonner.github.io/2017/02/The-DevOps-Pipeline-1/</id>
     <published>2017-02-28T12:08:47.000Z</published>
     <updated>2017-02-28T14:54:39.263Z</updated>
     
@@ -153,22 +154,22 @@
     </summary>
     
     
-      <category term="SSDT" scheme="https://sqldevops.tech/tags/SSDT/"/>
+      <category term="SSDT" scheme="https://oridonner.github.io/tags/SSDT/"/>
     
-      <category term="MSBuild" scheme="https://sqldevops.tech/tags/MSBuild/"/>
+      <category term="MSBuild" scheme="https://oridonner.github.io/tags/MSBuild/"/>
     
-      <category term="Sqlpackage" scheme="https://sqldevops.tech/tags/Sqlpackage/"/>
+      <category term="Sqlpackage" scheme="https://oridonner.github.io/tags/Sqlpackage/"/>
     
-      <category term="Git" scheme="https://sqldevops.tech/tags/Git/"/>
+      <category term="Git" scheme="https://oridonner.github.io/tags/Git/"/>
     
-      <category term="GitLab-CI" scheme="https://sqldevops.tech/tags/GitLab-CI/"/>
+      <category term="GitLab-CI" scheme="https://oridonner.github.io/tags/GitLab-CI/"/>
     
   </entry>
   
   <entry>
     <title>SQL Server Loves Open Source</title>
-    <link href="https://sqldevops.tech/2017/01/SQL-Server-Loves-Open-Source/"/>
-    <id>https://sqldevops.tech/2017/01/SQL-Server-Loves-Open-Source/</id>
+    <link href="https://oridonner.github.io/2017/01/SQL-Server-Loves-Open-Source/"/>
+    <id>https://oridonner.github.io/2017/01/SQL-Server-Loves-Open-Source/</id>
     <published>2017-01-15T22:00:00.000Z</published>
     <updated>2017-01-23T15:57:36.153Z</updated>
     
@@ -199,23 +200,23 @@
     
     </summary>
     
-      <category term="Intoduction" scheme="https://sqldevops.tech/categories/Intoduction/"/>
+      <category term="Intoduction" scheme="https://oridonner.github.io/categories/Intoduction/"/>
     
     
-      <category term="SQL Server" scheme="https://sqldevops.tech/tags/SQL-Server/"/>
+      <category term="SQL Server" scheme="https://oridonner.github.io/tags/SQL-Server/"/>
     
-      <category term="DevOps" scheme="https://sqldevops.tech/tags/DevOps/"/>
+      <category term="DevOps" scheme="https://oridonner.github.io/tags/DevOps/"/>
     
-      <category term="Open Source" scheme="https://sqldevops.tech/tags/Open-Source/"/>
+      <category term="Open Source" scheme="https://oridonner.github.io/tags/Open-Source/"/>
     
   </entry>
   
   <entry>
     <title>SQL Server DevOps jumpstart</title>
-    <link href="https://sqldevops.tech/2016/11/SQL-Server-jumpstart-session/"/>
-    <id>https://sqldevops.tech/2016/11/SQL-Server-jumpstart-session/</id>
+    <link href="https://oridonner.github.io/2016/11/SQL-Server-jumpstart-session/"/>
+    <id>https://oridonner.github.io/2016/11/SQL-Server-jumpstart-session/</id>
     <published>2016-11-30T16:30:35.000Z</published>
-    <updated>2017-01-04T09:23:57.000Z</updated>
+    <updated>2017-07-12T14:26:40.090Z</updated>
     
     <content type="html"><![CDATA[<p>On next Monday, 5 Dec 2016, I will give a 90 min session about SQL Server database devlopment, in the era of DevOps and open source.<br>I will cover some basic agile software development concepts from the perspective of a SQL Server DBA.  </p>
 <p>Join our <a href="https://www.meetup.com/Data-platform-Meetup-Israel/events/235727982/" target="_blank" rel="external">Meetup</a>.</p>
