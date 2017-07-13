@@ -3,7 +3,10 @@ title: About Me
 date: 2016-12-28 14:46:48
 comments: false
 ---
-Hi, my name is Ori Donner and I am a full stack data developer, with 10+ years of experience.
 
-![me](/about/images/WineFest.JPG)
-My hobby is making Wines, Spririts and Olive Oil.
+
+ ![Presenting my Wine in at Sorek Winefest, May 2012](/about/images/WineFest.JPG) 
+<!-- {% img  /about/images/WineFest.JPG %}  -->
+ <!-- "Presenting my Wine in at Sorek Winefest, May 2012" %} -->
+Hi, I am Ori Donner Data Engineer, doing data for 10+ years at the Start-Up nation.
+I am also the organizer of the [Apach-Kafka TLV Meetup](https://www.meetup.com/Apache-Kafka-TLV/).
