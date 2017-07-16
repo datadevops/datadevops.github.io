@@ -42,9 +42,9 @@
     </summary>
     
     
-      <category term="vNnext" scheme="https://oridonner.github.io/tags/vNnext/"/>
-    
       <category term="Linux" scheme="https://oridonner.github.io/tags/Linux/"/>
+    
+      <category term="vNnext" scheme="https://oridonner.github.io/tags/vNnext/"/>
     
       <category term="Linked Server" scheme="https://oridonner.github.io/tags/Linked-Server/"/>
     
@@ -91,9 +91,9 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://oridonner.github.io/tags/Linux/"/>
-    
       <category term="vNext" scheme="https://oridonner.github.io/tags/vNext/"/>
+    
+      <category term="Linux" scheme="https://oridonner.github.io/tags/Linux/"/>
     
       <category term="Packer" scheme="https://oridonner.github.io/tags/Packer/"/>
     
