@@ -1,138 +1,123 @@
-// Dean Attali / Beautiful Jekyll 2016
-
-var main = {
-
-  bigImgEl : null,
-  numImgs : null,
-
-  init : function() {
-    // Shorten the navbar after scrolling a little bit down
-    $(window).scroll(function() {
-        if ($(".navbar").offset().top > 50) {
-            $(".navbar").addClass("top-nav-short");
-        } else {
-            $(".navbar").removeClass("top-nav-short");
-        }
+(function ($) {
+    // To top button
+    $("#back-to-top").on('click', function () {
+        $('body, html').animate({ scrollTop: 0 }, 600);
     });
-    
-    // On mobile, hide the avatar when expanding the navbar menu
-    $('#main-navbar').on('show.bs.collapse', function () {
-      $(".navbar").addClass("top-nav-expanded");
-    });
-    $('#main-navbar').on('hidden.bs.collapse', function () {
-      $(".navbar").removeClass("top-nav-expanded");
-    });
-	
-    // On mobile, when clicking on a multi-level navbar menu, show the child links
-    $('#main-navbar').on("click", ".navlinks-parent", function(e) {
-      var target = e.target;
-      $.each($(".navlinks-parent"), function(key, value) {
-        if (value == target) {
-          $(value).parent().toggleClass("show-children");
-        } else {
-          $(value).parent().removeClass("show-children");
-        }
-      });
-    });
-    
-    // Ensure nested navbar menus are not longer than the menu header
-    var menus = $(".navlinks-container");
-    if (menus.length > 0) {
-      var navbar = $("#main-navbar ul");
-      var fakeMenuHtml = "<li class='fake-menu' style='display:none;'><a></a></li>";
-      navbar.append(fakeMenuHtml);
-      var fakeMenu = $(".fake-menu");
 
-      $.each(menus, function(i) {
-        var parent = $(menus[i]).find(".navlinks-parent");
-        var children = $(menus[i]).find(".navlinks-children a");
-        var words = [];
-        $.each(children, function(idx, el) { words = words.concat($(el).text().trim().split(/\s+/)); });
-        var maxwidth = 0;
-        $.each(words, function(id, word) {
-          fakeMenu.html("<a>" + word + "</a>");
-          var width =  fakeMenu.width();
-          if (width > maxwidth) {
-            maxwidth = width;
-          }
+    // Nav bar toggle
+    $('#main-nav-toggle').on('click', function () {
+        $('.nav-container-inner').slideToggle();
+    });
+
+    // Caption
+    $('.article-entry').each(function(i) {
+        $(this).find('img').each(function() {
+            if (this.alt) {
+                $(this).after('<span class="caption">' + this.alt + '</span>');
+            }
+
+            $(this).wrap('<a href="' + this.src + '" title="' + this.alt + '" class="gallery-item"></a>');
         });
-        $(menus[i]).css('min-width', maxwidth + 'px')
-      });
 
-      fakeMenu.remove();
-    }        
-    
-    // show the big header image	
-    main.initImgs();
-  },
-  
-  initImgs : function() {
-    // If the page was large images to randomly select from, choose an image
-    if ($("#header-big-imgs").length > 0) {
-      main.bigImgEl = $("#header-big-imgs");
-      main.numImgs = main.bigImgEl.attr("data-num-img");
-
-          // 2fc73a3a967e97599c9763d05e564189
-	  // set an initial image
-	  var imgInfo = main.getImgInfo();
-	  var src = imgInfo.src;
-	  var desc = imgInfo.desc;
-  	  main.setImg(src, desc);
-  	
-	  // For better UX, prefetch the next image so that it will already be loaded when we want to show it
-  	  var getNextImg = function() {
-	    var imgInfo = main.getImgInfo();
-	    var src = imgInfo.src;
-	    var desc = imgInfo.desc;		  
-	    
-		var prefetchImg = new Image();
-  		prefetchImg.src = src;
-		// if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
-		
-  		setTimeout(function(){
-                  var img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
-  		  $(".intro-header.big-img").prepend(img);
-  		  setTimeout(function(){ img.css("opacity", "1"); }, 50);
-		  
-		  // after the animation of fading in the new image is done, prefetch the next one
-  		  //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
-		  setTimeout(function() {
-		    main.setImg(src, desc);
-			img.remove();
-  			getNextImg();
-		  }, 1000); 
-  		  //});		
-  		}, 6000);
-  	  };
-	  
-	  // If there are multiple images, cycle through them
-	  if (main.numImgs > 1) {
-  	    getNextImg();
-	  }
+    });
+    if (typeof lightGallery != 'undefined') {
+        var options = {
+            selector: '.gallery-item',
+        };
+        lightGallery($('.article-entry')[0], options);
+        lightGallery($('.article-gallery')[0], options);
     }
-  },
-  
-  getImgInfo : function() {
-  	var randNum = Math.floor((Math.random() * main.numImgs) + 1);
-    var src = main.bigImgEl.attr("data-img-src-" + randNum);
-	var desc = main.bigImgEl.attr("data-img-desc-" + randNum);
-	
-	return {
-	  src : src,
-	  desc : desc
-	}
-  },
-  
-  setImg : function(src, desc) {
-	$(".intro-header.big-img").css("background-image", 'url(' + src + ')');
-	if (typeof desc !== typeof undefined && desc !== false) {
-	  $(".img-desc").text(desc).show();
-	} else {
-	  $(".img-desc").hide();  
-	}
-  }
-};
 
-// 2fc73a3a967e97599c9763d05e564189
+    // Sidebar expend
+    $('#sidebar .sidebar-toggle').click(function () {
+        if($('#sidebar').hasClass('expend')) {
+            $('#sidebar').removeClass('expend');
+        } else {
+            $('#sidebar').addClass('expend');
+        }
+    });
 
-document.addEventListener('DOMContentLoaded', main.init);
+
+    // Remove extra main nav wrap
+    $('.main-nav-list > li').unwrap();
+
+    // Highlight current nav item
+    $('#main-nav > li > .main-nav-list-link').each(function () {
+        if($('.page-title-link').length > 0){
+            if ($(this).html().toUpperCase() == $('.page-title-link').html().toUpperCase()) {
+                $(this).addClass('current');
+            } else if ($(this).attr('href') == $('.page-title-link').attr('data-url')) {
+                $(this).addClass('current');
+            }
+        }
+    });
+
+    // Auto hide main nav menus
+    function autoHideMenus(){
+        var max_width = $('.nav-container-inner').width() - 10;
+        var main_nav_width = $('#main-nav').width();
+        var sub_nav_width = $('#sub-nav').width();
+        if (main_nav_width + sub_nav_width > max_width) {
+            // If more link not exists
+            if ($('.main-nav-more').length == 0) {
+                $(['<li class="main-nav-list-item top-level-menu main-nav-more">',
+                    '<a class="main-nav-list-link" href="javascript:;">More</a>',
+                    '<ul class="main-nav-list-child">',
+                    '</ul></li>'].join('')).appendTo($('#main-nav'));
+                // Bind hover event
+                $('.main-nav-more').hover(function () {
+                    if($(window).width() < 480) {
+                        return;
+                    }
+                    $(this).children('.main-nav-list-child').slideDown('fast');
+                }, function () {
+                    if($(window).width() < 480) {
+                        return;
+                    }
+                    $(this).children('.main-nav-list-child').slideUp('fast');
+                });
+            }
+            var child_count = $('#main-nav').children().length;
+            for (var i = child_count - 2; i >= 0; i--) {
+                var element = $('#main-nav').children().eq(i);
+                if (main_nav_width + sub_nav_width > max_width) {
+                    element.prependTo($('.main-nav-more > ul'));
+                    main_nav_width = $('#main-nav').width();
+                } else {
+                    return;
+                }
+            }
+        }
+        // Nav bar is wide enough
+        if ($('.main-nav-more').length > 0) {
+            $('.main-nav-more > ul').children().appendTo($('#main-nav'));
+            $('.main-nav-more').remove();
+        }
+    }
+    autoHideMenus();
+
+    $(window).resize(function () {
+        autoHideMenus();
+    });
+
+    // Fold second-level menu
+    $('.main-nav-list-item').hover(function () {
+        if ($(window).width() < 480) {
+            return;
+        }
+        $(this).children('.main-nav-list-child').slideDown('fast');
+    }, function () {
+        if ($(window).width() < 480) {
+            return;
+        }
+        $(this).children('.main-nav-list-child').slideUp('fast');
+    });
+
+    // Add second-level menu mark
+    $('.main-nav-list-item').each(function () {
+        if ($(this).find('.main-nav-list-child').length > 0) {
+            $(this).addClass('top-level-menu');
+        }
+    });
+
+})(jQuery);
