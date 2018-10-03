@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>DataOps.blog</title>
+  <title>Ori&#39;s Blog</title>
   <subtitle>Where Data Engineering &amp; DevOps converge</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dataops.blog/"/>
-  <updated>2018-10-03T10:01:47.361Z</updated>
+  <updated>2018-10-03T13:39:13.517Z</updated>
   <id>https://dataops.blog/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://dataops.blog/2017/05/vNext-Linked-Server/"/>
     <id>https://dataops.blog/2017/05/vNext-Linked-Server/</id>
     <published>2017-05-15T09:25:46.000Z</published>
-    <updated>2018-10-03T10:01:47.361Z</updated>
+    <updated>2018-10-03T13:39:13.517Z</updated>
     
     <content type="html"><![CDATA[<p>If you have started Microsoft’s vNext SQL Server on Linux or Docker container and tried to set up a linked server, using SSMS GUI, you probably got this error message: <br><br><br><img src="/images/LinkedServerError.PNG" class="col-md-7"></p>
 <p><br><br><br><br><br>The reason is that Microsoft doesn’t support distributed queries on SQL Server vNext (yet), as published on Microsoft’s <a href="https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-release-notes" target="_blank" rel="external">official site</a>:<br><br><br><img src="/images/LinkedServerUnsupported.PNG" alt=""></p>
@@ -55,7 +55,7 @@
     <link href="https://dataops.blog/2017/04/SQL-Server-vNext-Vagrant-Box/"/>
     <id>https://dataops.blog/2017/04/SQL-Server-vNext-Vagrant-Box/</id>
     <published>2017-04-02T08:07:02.000Z</published>
-    <updated>2018-10-03T10:01:47.349Z</updated>
+    <updated>2018-10-03T13:39:13.517Z</updated>
     
     <content type="html"><![CDATA[<h2 id="SQL-Server-vNext"><a href="#SQL-Server-vNext" class="headerlink" title="SQL Server vNext"></a>SQL Server vNext</h2><p>Nov. 2016, Microsoft announced it’s first SQL Server Linux version (<a href="https://www.microsoft.com/en-us/sql-server/sql-server-vnext-including-Linux" target="_blank" rel="external">vNext</a>); On March 2017 CTP 1.4 was launched; An average rate of approximately one CTP update per month; Microsoft is taking things seriously!   </p>
 <p>You probably ask yourself; Why should a SQL Server DBA, works his entire life on Windows OS,  be interested in SQL Server running on Linux?  </p>
@@ -215,7 +215,7 @@
     <link href="https://dataops.blog/2016/11/SQL-Server-jumpstart-session/"/>
     <id>https://dataops.blog/2016/11/SQL-Server-jumpstart-session/</id>
     <published>2016-11-30T16:30:35.000Z</published>
-    <updated>2018-10-03T10:01:47.345Z</updated>
+    <updated>2018-10-03T13:39:13.517Z</updated>
     
     <content type="html"><![CDATA[<p>On next Monday, 5 Dec 2016, I will give a 90 min session about SQL Server database devlopment, in the era of DevOps and open source.<br>I will cover some basic agile software development concepts from the perspective of a SQL Server DBA.  </p>
 <p>Join our <a href="https://www.meetup.com/Data-platform-Meetup-Israel/events/235727982/" target="_blank" rel="external">Meetup</a>.</p>

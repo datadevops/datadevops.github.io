@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://dataops.blog/about/index.html</loc>
+    <loc>https://dataops.blog/2016/11/SQL-Server-jumpstart-session/</loc>
     
-    <lastmod>2018-10-03T10:01:47.373Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dataops.blog/2017/05/vNext-Linked-Server/</loc>
-    
-    <lastmod>2018-10-03T10:01:47.361Z</lastmod>
+    <lastmod>2018-10-03T13:39:13.517Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://dataops.blog/2017/04/SQL-Server-vNext-Vagrant-Box/</loc>
     
-    <lastmod>2018-10-03T10:01:47.349Z</lastmod>
+    <lastmod>2018-10-03T13:39:13.517Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dataops.blog/2016/11/SQL-Server-jumpstart-session/</loc>
+    <loc>https://dataops.blog/2017/05/vNext-Linked-Server/</loc>
     
-    <lastmod>2018-10-03T10:01:47.345Z</lastmod>
+    <lastmod>2018-10-03T13:39:13.517Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dataops.blog/about/index.html</loc>
+    
+    <lastmod>2018-10-03T13:39:13.517Z</lastmod>
     
   </url>
   
