@@ -2,44 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://oridonner.github.io/about/index.html</loc>
+    <loc>https://dataops.blog/about/index.html</loc>
     
-    <lastmod>2017-07-13T09:09:08.040Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://oridonner.github.io/2017/04/SQL-Server-vNext-Vagrant-Box/</loc>
-    
-    <lastmod>2017-07-12T14:40:10.573Z</lastmod>
+    <lastmod>2018-10-03T10:01:47.373Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://oridonner.github.io/2016/11/SQL-Server-jumpstart-session/</loc>
+    <loc>https://dataops.blog/2017/05/vNext-Linked-Server/</loc>
     
-    <lastmod>2017-07-12T14:26:40.090Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://oridonner.github.io/2017/05/vNext-Linked-Server/</loc>
-    
-    <lastmod>2017-07-12T14:20:21.940Z</lastmod>
+    <lastmod>2018-10-03T10:01:47.361Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://oridonner.github.io/2017/02/The-DevOps-Pipeline-1/</loc>
+    <loc>https://dataops.blog/2017/04/SQL-Server-vNext-Vagrant-Box/</loc>
     
-    <lastmod>2017-02-28T14:54:39.263Z</lastmod>
+    <lastmod>2018-10-03T10:01:47.349Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://oridonner.github.io/2017/01/SQL-Server-Loves-Open-Source/</loc>
+    <loc>https://dataops.blog/2016/11/SQL-Server-jumpstart-session/</loc>
     
-    <lastmod>2017-01-23T15:57:36.153Z</lastmod>
+    <lastmod>2018-10-03T10:01:47.345Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dataops.blog/2017/01/SQL-Server-Loves-Open-Source/</loc>
+    
+    <lastmod>2017-08-16T05:20:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dataops.blog/2017/02/The-DevOps-Pipeline-1/</loc>
+    
+    <lastmod>2017-08-16T05:20:28.000Z</lastmod>
     
   </url>
   
